@@ -1,0 +1,101 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.js">
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="audrey.css">
+    
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="nav-bar">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container bg-dark">
+          <a class="navbar-brand text-white tit" href="#">HEALTHY DIP N SLICE</a>
+          <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- nav links -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto text white">
+              <li class="nav-item active">
+                <a class="nav-link text-white text-bold" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <!-- <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle text-white text-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Our Dishes
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item " href="#">Breakfast</a>
+                    <a class="dropdown-item" href="#">Lunch</a>
+                    <a class="dropdown-item" href="#">Dinner</a>
+                    <a class="dropdown-item" href="#">Snacks</a>
+                    <a class="dropdown-item" href="#">Drinks</a>
+                  </div>
+                </li> -->
+              <li class="nav-item">
+                <a class="nav-link text-white text-bold" href="dishes.html">Our Dishes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-bold" href="login.html">Sign in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-bold" href="signup.html">Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-bold" href="#">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white text-bold" href="<?php include('index.php')?>">Our Blog</a>
+              </li>
+              <li class="nav-item text-white text-bold">
+                <a class="nav-link btn btn-table text-white text-bold" href="#">Book A Table</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </nav>
+  </div>
+
+</div>
+  
+  <div style="margin-top: 3%;" class="container-fluid bg-dark">
+    <div class="row">
+      <div  class="column buddy">
+       <img class="contact" src="img/chen-mizrach-1NTOQHBRegA-unsplash.jpg" style="width:95%;">
+      </div>
+      <div class="column hey">
+        <h2 class="text-white display-4 pt-2" style="text-align:center">Get In Touch</h2>
+        <form action="/action_page.php">
+          <label class="text-white" for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your Name..">
+         
+          <label class="text-white" for="email">Email</label>
+          <input type="text" id="userinput" name="email" placeholder="Your Mail..">
+      
+          <label class="text-white" for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Leave us a message..." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+       </div>
+      </div>
+    </div>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,303 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard.html</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="Stylesheet.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  </head>
+
+  <!-- NOTE !! REFER TO LINE 46 FOR SOME POINTERS 
+       ALSO REFER TO LINE 80
+  -->
+
+  <body class="whitenav">
+    <div class="container-fluid">
+      <div class="nav-bar pt-3">
+          <nav class="navbar navbar-expand-lg navbar-light ">
+              <a class="navbar-brand text-white" href="#">HEALTHY DIP N SLICE</a>
+              <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- nav links -->
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto text white">
+                  <li class="nav-item active">
+                    <a class="nav-link text-white text-bold" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <!-- <li class="nav-item dropdown ">
+                      <a class="nav-link dropdown-toggle text-white text-bold" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Our Dishes
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item " href="#">Breakfast</a>
+                        <a class="dropdown-item" href="#">Lunch</a>
+                        <a class="dropdown-item" href="#">Dinner</a>
+                        <a class="dropdown-item" href="#">Snacks</a>
+                        <a class="dropdown-item" href="#">Drinks</a>
+                      </div>
+                    </li> -->
+                  <li class="nav-item">
+                    <a class="nav-link text-bold" href="dishes.html">Our Dishes</a>
+                  </li>
+                  <!-- if authenticated login and signup don't show  instead replace them with an li saying welome username-->
+                  <li class="nav-item">
+                    <a class="nav-link text-bold" href="login.html">Sign in</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-bold" href="signup.html">Sign up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-bold" href="contactus.html">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-bold" href="<?php include('index.php')?>">Our Blog</a>
+                  </li>
+
+
+                </ul>
+              </div>
+            </nav>
+      </div>
+
+    </div>
+
+    <div>
+      <section id="top_items">
+          <div class="cart_table"> 
+              <header>
+                <span class="item_title">Title</span>
+                <span class="">Price</span>
+                <span class="">Qty</span>
+                <span class="">Subtotal</span>  
+              </header>
+              <div class="item_row">
+                <div class="item_stats">
+                  <!-- replace with dish picture -->
+                  <div class="prod_img"> <img src="../static/images/IMG-20181129-WA0012.jpg" alt=""> </div>
+                  <div class="det_col">
+                    <div>
+                      <!-- replace this with dish name  -->
+                      <div><span>Fiendi Slippers</span>  <span></span></div>
+                      <div class="help_btns">
+                        <a href=""> <span>a</span> <span>Move to Favorites</span> </a>
+                        <a href=""> <span>b</span> <span>Remove</span> </a>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+                <div class="mg">
+                  <div class="mg_div">
+                    <div> 5</div>
+                    <div class="add_sub">
+                      <a href=""><span>-</span></a>
+                      <a href=""><span>+</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mg">
+                  <div class="prices">
+                    <div class="important">2000</div>
+                    <div class="discount">
+                      <div>4000</div>
+                      <div>50% Off</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mg">
+                    <div class="important">5000N</div>
+                </div>
+              </div>
+
+              <div class="item_row">
+                <div class="item_stats">
+                  <div class="prod_img"> <img src="../static/images/IMG-20181129-WA0012.jpg" alt=""> </div>
+                  <div class="det_col">
+                    <div>
+                      <div><span>Fiendi Slippers</span>  <span></span></div>
+                      <div class="help_btns">
+                        <a href=""> <span>a</span> <span>Move to Favorites</span> </a>
+                        <a href=""> <span>b</span> <span>Remove</span> </a>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+                <div class="mg">
+                  <div class="mg_div">
+                    <div> 5</div>
+                    <div class="add_sub">
+                      <a href=""><span>-</span></a>
+                      <a href=""><span>+</span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mg">
+                  <div class="prices">
+                    <div class="important">2000</div>
+                    <div class="discount">
+                      <div>4000</div>
+                      <div>50% Off</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mg">
+                    <div class="important">5000N</div>
+                </div>
+              </div>
+
+
+              <div class="total">
+                  <div>
+                    <b>Total:</b>
+                    <span>30900 </span>
+                  </div>
+              </div>
+
+              <div class="final_btn total">
+                <a href=""> <button>CONTINUE SHOPPING</button> </a>
+                <a href=""> <button>PROCEED TO CHECKOUT</button> </a>
+
+              </div>
+
+          </div>
+      </section>
+
+      
+      <section id="top_items" class="gallery">
+        <div class="cart_table" id="noback">
+          <header>
+            <span class="item_title">TODAY'STOP DISHES</span>
+          </header>
+          <div class="topimggrid">
+            <div>
+              <div>
+                <img src="img/breakfast1.jpeg" alt="">
+              </div>
+              <div class="orderbtn">
+                <button>Order dish</button>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="img/breakfast2.jpeg" alt="">
+              </div>
+              <div class="orderbtn">
+                <button>Order dish</button>
+              </div>
+            </div>
+ 
+            <div>
+              <div>
+                <img src="img/breakfast5.jpeg" alt="">
+              </div>
+              <div class="orderbtn">
+                <button>Order dish</button>
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src="img/breakfast4.jpeg" alt="">
+              </div>
+              <div class="orderbtn">
+                <button>Order dish</button>
+              </div>
+            </div>
+
+          </div>
+  
+        </div>
+      </section>
+
+
+    </div>
+
+    <footer id="foot" class="mt-5">
+      <div class="container-fluid ">
+          <div class="row">
+
+               <div class="col-md-3 col-sm-8">
+                    <div class="footer-info">
+                         <div class="section-title">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.2s">Find us</h2>
+                         </div>
+                         <address class="wow fadeInUp" data-wow-delay="0.4s">
+                          <p> 2 Baptist street,<br> Epe<br>Lagos</p>
+                         </address>
+                    </div>
+               </div>
+
+               <div class="col-md-3 col-sm-8">
+                    <div class="footer-info">
+                         <div class="section-title">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.2s">Reservation</h2>
+                         </div>
+                         <address class="wow fadeInUp" data-wow-delay="0.4s">
+                          <p>+234-8105974693 | +234-8145991929</p>
+                          <p><a href="mailto:info@healthy_dns.com">info@healthy_dns.com</a></p>
+                              <p>LINE: eatery247 </p>
+                         </address>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-sm-8">
+                    <div class="footer-info footer-open-hour">
+                         <div class="section-title">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.2s">Open Hours</h2>
+                         </div>
+                         <div class="wow fadeInUp" data-wow-delay="0.4s">
+                              <div>
+                                   <strong>Monday to Friday</strong>
+                                   <p>7:00 AM - 9:00 PM</p>
+                              </div>
+                              <div>
+                                   <strong>Saturday - Sunday</strong>
+                                   <p>11:00 AM - 10:00 PM</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="col-md-2 col-sm-4 icon">
+                    <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                         <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                         <li><a href="#" class="fa fa-twitter"></a></li>
+                         <li><a href="#" class="fa fa-instagram"></a></li>
+                         <li><a href="#" class="fa fa-google"></a></li>
+                    </ul>
+
+                    <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
+                         <p><br>Copyright &copy; 2018 <br>Healthy Dip 'N' Slice
+                    </div>
+               </div>
+               
+          </div>
+     </div>
+
+  </footer>
+
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+  <script src="/js/index.js"></script>
+
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQO8y9gQpzUI-iireQncQndKK1kqQ9R_k&callback=initMap" async defer>
+  </script>
+
+
+  </html>
+ 
+ 
+ 
+ 
+
+
